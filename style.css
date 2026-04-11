@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Noto+Sans+Thai:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 0 10%;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #e9f3f0;
+    border: 1px solid #000000;
+    font-family: sans-serif;
+    width: auto;
+    height: 98px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #1a1a3a;
+}
+
+.logo-text {
+    font-family: "Caesar Dressing", system-ui;
+    letter-spacing: 2px;
+    font-size: 48px;
+
+}
+
+.logo-icon {
+    transform: rotate(3deg);
+}
+
+.search-container {
+    flex-grow: 1;
+    display: flex;
+    margin-left: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 5px 10px;
+    width: 250px;
+}
+
+.search-box input {
+    padding-left: 60px;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-left: 8px;
+    width: 100%;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-signin {
+    background-color: #e0e0e0;
+    border: 1px solid #bbb;
+    padding: 8px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-register {
+    background-color: #1a1a3a;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.navbar2 {
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    background-color: #1F1E48;
+    border: 1px solid #000000;
+    font-family: sans-serif;
+    width: auto;
+    height: 98px;
+}
+
+.navbar2 ul {
+    display: flex;
+    
+    }
+.navbar2 li {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding-left: 45px;
+    font-size: 30px;
+
+}
+
+.block{
+    height: 16px;
+    margin: 0 10%;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(156, 156, 156));
+    border: 1px solid #000000;
+
+}
