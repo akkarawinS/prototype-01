@@ -134,6 +134,7 @@ button:hover {
 .selling-list {
     margin: 0 10%;
     width: auto;
+    height: 316px;
     display: flex;
     overflow-x: auto;
     background-color: #e9f3f0;
