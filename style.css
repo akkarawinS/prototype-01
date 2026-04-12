@@ -133,6 +133,13 @@ button:hover {
 
 }
 
+.block2 {
+    height: 16px;
+    margin: 0 10%;
+    background-color: white;
+
+}
+
 .selling-list {
     margin: 0 10%;
     width: auto;
@@ -226,14 +233,16 @@ button:hover {
     flex-direction: column;
 }
 
-.daily-feed h2 {
+.head-txt {
     font-family: "TikTok Sans", sans-serif;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 400;
     padding-top: 32px;
     padding-bottom: 24px;
+    padding-left: 24px;
 
 }
+
 
 .feed {
     display: flex;
@@ -271,8 +280,24 @@ button:hover {
 }
 
 .left-feed-txt {
-    padding-left: 8px;
+    padding: 24px 8px;
 }
+
+.left-feed-txt h2 {
+    font-size: 24px;
+    padding-bottom: 8px;
+    width: fit-content;
+}
+
+.left-feed-txt h2:hover {
+    color: rebeccapurple;
+    text-decoration: underline;
+
+}
+.left-feed-txt h3 {
+    padding-bottom: 8px;
+}
+
 
 .radio {
     margin: 0 10%;
@@ -456,7 +481,8 @@ button:hover {
     color: white;
     flex-direction: column;
 }
-.links{
+
+.links {
     display: flex;
     flex-direction: column;
 }
