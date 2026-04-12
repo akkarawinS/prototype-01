@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Noto+Sans+Thai:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Thai:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
 
 * {
     margin: 0;
@@ -34,6 +35,10 @@
 
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 .logo-icon {
     transform: rotate(3deg);
 }
@@ -55,7 +60,7 @@
 }
 
 .search-box input {
-    padding-left: 60px;
+    text-align: center;
 }
 
 .search-box input {
@@ -107,8 +112,9 @@ button:hover {
 
 .navbar2 ul {
     display: flex;
-    
-    }
+
+}
+
 .navbar2 li {
     color: white;
     font-family: "Roboto", sans-serif;
@@ -117,10 +123,93 @@ button:hover {
 
 }
 
-.block{
+.block {
     height: 16px;
     margin: 0 10%;
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(156, 156, 156));
     border: 1px solid #000000;
 
+}
+
+.selling-right-now {
+    margin: 0 10%;
+    display: flex;
+    background-color: #e9f3f0;
+    border: 1px solid #000000;
+    font-family: sans-serif;
+    width: auto;
+    height: 204px;
+    flex-direction: column;
+    font-family: "TikTok Sans", sans-serif;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.selling-right-now h2 {
+    padding: 8px 8px;
+}
+
+
+.item-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: start;
+    padding-left: 20px;
+    animation: spin 5s infinite linear;
+}
+
+.item-list :hover {
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+.product-card {
+    justify-items: center;
+    padding: 0 8px;
+}
+
+.product-card .price {
+    padding-top: 4px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.product-card img {
+    width: auto;
+    height: 100px;
+    padding-top: 4px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-150px * 10));
+    }
+}
+
+
+.slider-container {
+    overflow: hidden;
+    width: auto;
+    background-color: #eaf4f4;
+    margin: 0 10%;
+    border: 5px solid black;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 20);
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+   from {translate: 0;}
+   to {translate: -100%;}
 }
