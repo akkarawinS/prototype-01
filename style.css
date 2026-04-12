@@ -131,85 +131,72 @@ button:hover {
 
 }
 
-.selling-right-now {
+.selling-list {
     margin: 0 10%;
-    display: flex;
-    background-color: #e9f3f0;
-    border: 1px solid #000000;
-    font-family: sans-serif;
     width: auto;
-    height: 204px;
-    flex-direction: column;
-    font-family: "TikTok Sans", sans-serif;
-    font-weight: 500;
-    justify-content: center;
+    display: flex;
+    overflow-x: auto;
+    background-color: #e9f3f0;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid black;
 }
 
-.selling-right-now h2 {
-    padding: 8px 8px;
+.selling-list::-webkit-scrollbar {
+    display: none;
 }
 
+.selling-list:hover .item-list {
+    animation-play-state: paused;
+}
 
 .item-list {
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    justify-content: start;
-    padding-left: 20px;
-    animation: spin 5s infinite linear;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    animation: spin 30s infinite linear;
+    padding-right: 5em;
 }
 
-.item-list :hover {
-    background-color: #d3d3d3;
-    cursor: pointer;
-}
-
-.product-card {
+.card {
+    flex: 0 0 10em;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 0.2em;
+    flex-direction: column;
     justify-items: center;
-    padding: 0 8px;
 }
 
-.product-card .price {
-    padding-top: 4px;
-    font-size: large;
-    font-weight: 600;
+.card p {
+    margin-top: 10px;
 }
 
-.product-card img {
-    width: auto;
-    height: 100px;
-    padding-top: 4px;
+.card:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #d3d3d3;
 }
 
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(-150px * 10));
-    }
-}
-
-
-.slider-container {
-    overflow: hidden;
-    width: auto;
-    background-color: #eaf4f4;
+.txt-on-top {
+    font-family: "TikTok Sans", sans-serif;
     margin: 0 10%;
-    border: 5px solid black;
+    padding: 8px 8px;
+    background-color: #e9f3f0;
+    font-size: larger;
+    font-weight: 500;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+
 }
 
-.slide-track {
-    display: flex;
-    width: calc(250px * 20);
-}
+@keyframes spin {
+    from {
+        translate: 0;
+    }
 
-.slide-track:hover {
-    animation-play-state: paused;
-}
-
-@keyframes scroll {
-   from {translate: 0;}
-   to {translate: -100%;}
+    to {
+        translate: -100%;
+    }
 }
