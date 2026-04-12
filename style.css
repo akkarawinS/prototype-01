@@ -201,3 +201,57 @@ button:hover {
         translate: -100%;
     }
 }
+
+.daily-feed {
+    margin: 0 10%;
+    width: auto;
+    height: auto;
+    display: flex;
+    overflow-x: auto;
+    background-color: #e9f3f0;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.daily-feed h2 {
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 24px;
+
+}
+
+.feed{
+    display: flex;
+    flex-direction: row;
+
+}
+.left-feed{
+    flex: 3;
+}
+.right-feed{
+    flex: 2;
+}
+.left-feed img{
+    width: 842px;
+    height: 529px;
+}
+.right-feed img{
+     width: 468px;
+    height: 260px;
+}
+
+.right-feed .pic{
+    justify-self: center;
+
+}
+
+.pic p{
+    justify-self: center;
+    padding: 8px;
+
+}
+.left-feed-txt {
+    padding-left: 8px;
+}
