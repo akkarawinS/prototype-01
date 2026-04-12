@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Noto+Sans+Thai:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Thai:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 0 10%;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #e9f3f0;
+    border: 1px solid #000000;
+    font-family: sans-serif;
+    width: auto;
+    height: 98px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #1a1a3a;
+}
+
+.logo-text {
+    font-family: "Caesar Dressing", system-ui;
+    letter-spacing: 2px;
+    font-size: 48px;
+
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo-icon {
+    transform: rotate(3deg);
+}
+
+.search-container {
+    flex-grow: 1;
+    display: flex;
+    margin-left: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 5px 10px;
+    width: 250px;
+}
+
+.search-box input {
+    text-align: center;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-left: 8px;
+    width: 100%;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-signin {
+    background-color: #e0e0e0;
+    border: 1px solid #bbb;
+    padding: 8px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-register {
+    background-color: #1a1a3a;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.navbar2 {
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    background-color: #1F1E48;
+    border: 1px solid #000000;
+    font-family: sans-serif;
+    width: auto;
+    height: 98px;
+}
+
+.navbar2 ul {
+    display: flex;
+
+}
+
+.navbar2 li {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding-left: 45px;
+    font-size: 30px;
+
+}
+
+.block {
+    height: 16px;
+    margin: 0 10%;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(156, 156, 156));
+    border: 1px solid #000000;
+
+}
+
+.selling-list {
+    margin: 0 10%;
+    width: auto;
+    height: 316px;
+    display: flex;
+    overflow-x: auto;
+    background-color: #e9f3f0;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid black;
+}
+
+.selling-list::-webkit-scrollbar {
+    display: none;
+}
+
+.selling-list:hover .item-list {
+    animation-play-state: paused;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    animation: spin 30s infinite linear;
+    padding-right: 5em;
+}
+
+.card {
+    flex: 0 0 10em;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 0.2em;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+.card:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #d3d3d3;
+}
+
+.txt-on-top {
+    font-family: "TikTok Sans", sans-serif;
+    margin: 0 10%;
+    padding: 8px 8px;
+    background-color: #e9f3f0;
+    font-size: larger;
+    font-weight: 500;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+.daily-feed {
+    margin: 0 10%;
+    width: auto;
+    height: auto;
+    display: flex;
+    overflow-x: auto;
+    background-color: #e9f3f0;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.daily-feed h2 {
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 24px;
+
+}
+
+.feed{
+    display: flex;
+    flex-direction: row;
+
+}
+.left-feed{
+    flex: 3;
+}
+.right-feed{
+    flex: 2;
+}
+.left-feed img{
+    width: 842px;
+    height: 529px;
+}
+.right-feed img{
+     width: 468px;
+    height: 260px;
+}
+
+.right-feed .pic{
+    justify-self: center;
+
+}
+
+.pic p{
+    justify-self: center;
+    padding: 8px;
+
+}
+.left-feed-txt {
+    padding-left: 8px;
+}
